@@ -3,6 +3,7 @@ name: implementation-worker
 description: Scoped implementation agent for small, well-understood code changes after exploration. Use when the desired fix is narrow and validation is known.
 tools: Read, Grep, Glob, Bash, Edit, MultiEdit, Write
 model: sonnet
+effort: medium
 permissionMode: default
 color: green
 ---

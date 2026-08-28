@@ -3,6 +3,7 @@ name: test-diagnostician
 description: Test failure and CI-log diagnostician. Use for failing tests, flaky behaviour, noisy traces, or deciding which validation to run next.
 tools: Read, Grep, Glob, Bash
 model: sonnet
+effort: medium
 permissionMode: default
 color: yellow
 ---

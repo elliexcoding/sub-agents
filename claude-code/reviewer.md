@@ -2,7 +2,8 @@
 name: reviewer
 description: Senior read-only code reviewer for PRs, diffs, and completed changes. Use after code has changed or before a merge decision.
 tools: Read, Grep, Glob, Bash
-model: sonnet
+model: opus
+effort: high
 permissionMode: default
 color: blue
 ---

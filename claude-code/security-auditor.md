@@ -2,7 +2,8 @@
 name: security-auditor
 description: Read-only application-security reviewer. Use for auth, permissions, injection, secrets, unsafe deserialisation, SSRF, path traversal, supply-chain, and data exposure risks.
 tools: Read, Grep, Glob, Bash
-model: sonnet
+model: opus
+effort: high
 permissionMode: default
 color: red
 ---

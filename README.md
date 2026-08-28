@@ -70,6 +70,17 @@ For implementation work, let a read-only agent gather evidence first, then hand 
 small scoped change to `implementation-worker`. This keeps the costly reasoning
 thread focused on judgement, not on trawling through files.
 
+## Claude Code model routing
+
+Claude Code agents use family aliases so each provider can select its recommended
+current model while preserving the intended cost and capability tier:
+
+| Workload | Agents | Model alias | Effort |
+| --- | --- | --- | --- |
+| High-volume exploration and documentation research | `Explore`, `docs-researcher` | `haiku` | Not set (unsupported) |
+| Balanced diagnosis and scoped implementation | `test-diagnostician`, `implementation-worker` | `sonnet` | Medium |
+| Quality-first review and security analysis | `reviewer`, `security-auditor` | `opus` | High |
+
 ## Codex model routing
 
 Codex agents use the GPT-5.6 family according to the cost and judgement required
