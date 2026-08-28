@@ -1,6 +1,6 @@
 name = "security_auditor"
 description = "Read-only application-security reviewer for auth, injection, secrets, SSRF, path traversal, unsafe deserialisation, supply-chain, and data exposure risks."
-model = "gpt-5.5"
+model = "gpt-5.6-sol"
 model_reasoning_effort = "high"
 sandbox_mode = "read-only"
 nickname_candidates = ["Security", "Threat", "Verifier"]

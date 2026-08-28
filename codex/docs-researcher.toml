@@ -1,6 +1,6 @@
 name = "docs_researcher"
 description = "Documentation and API behaviour researcher for framework, library, platform, and version-specific questions."
-model = "gpt-5.4-mini"
+model = "gpt-5.6-luna"
 model_reasoning_effort = "medium"
 sandbox_mode = "read-only"
 nickname_candidates = ["Docs", "Reference", "Lookup"]

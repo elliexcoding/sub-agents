@@ -1,6 +1,6 @@
 name = "test_diagnostician"
 description = "Test failure and CI-log diagnostician for failing tests, flaky behaviour, noisy traces, and validation planning."
-model = "gpt-5.3-codex-spark"
+model = "gpt-5.6-terra"
 model_reasoning_effort = "medium"
 sandbox_mode = "read-only"
 nickname_candidates = ["Test Trace", "Failure Map", "Signal"]

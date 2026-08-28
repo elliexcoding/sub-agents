@@ -70,6 +70,17 @@ For implementation work, let a read-only agent gather evidence first, then hand 
 small scoped change to `implementation-worker`. This keeps the costly reasoning
 thread focused on judgement, not on trawling through files.
 
+## Codex model routing
+
+Codex agents use the GPT-5.6 family according to the cost and judgement required
+by each workload:
+
+| Workload | Agents | Model | Reasoning effort |
+| --- | --- | --- | --- |
+| High-volume exploration and documentation research | `explorer`, `docs_researcher` | `gpt-5.6-luna` | Medium |
+| Balanced diagnosis and scoped implementation | `test_diagnostician`, `implementation_worker` | `gpt-5.6-terra` | Medium |
+| Quality-first review and security analysis | `reviewer`, `security_auditor` | `gpt-5.6-sol` | High |
+
 ## Design principles
 
 - Prefer read-only agents for exploration, review, security, and docs research.
