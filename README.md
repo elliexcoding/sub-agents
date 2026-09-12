@@ -50,6 +50,7 @@ does not detect the files immediately.
 | Security review | `security-auditor` | `security_auditor` | Read-only source-to-sink analysis |
 | Documentation research | `docs-researcher` | `docs_researcher` | Verify APIs and version-sensitive behaviour |
 | Scoped implementation | `implementation-worker` | `implementation_worker` | Small targeted edits after exploration |
+| Git housekeeping | - | `git_housekeeper` | Explicit fast-forward merges and safe worktree clean-up |
 
 ## Recommended usage
 
@@ -89,6 +90,7 @@ by each workload:
 | Workload | Agents | Model | Reasoning effort |
 | --- | --- | --- | --- |
 | High-volume exploration and documentation research | `explorer`, `docs_researcher` | `gpt-5.6-luna` | Medium |
+| Mechanical Git merges and worktree clean-up | `git_housekeeper` | `gpt-5.6-luna` | Low |
 | Balanced diagnosis and scoped implementation | `test_diagnostician`, `implementation_worker` | `gpt-5.6-terra` | Medium |
 | Quality-first review and security analysis | `reviewer`, `security_auditor` | `gpt-5.6-sol` | High |
 
